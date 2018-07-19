@@ -22,8 +22,15 @@ class CoordinateController1: UIViewController {
     
     var midpoint : (Double,Double)?{
         didSet{
+            // UserDefaults.standard.set(midpoint, forKey: "midpoint")
+           
+            UserDefaults.standard.set(midpoint?.0, forKey: "lon")
+            UserDefaults.standard.set(midpoint?.1, forKey: "lat")
+            
             self.performSegue(withIdentifier: "toFood", sender: self)
-                        UserDefaults.standard.addSuite(named: "midpoint")
+    
+            
+            
             
             
 //                        UserDefaults.standard.set(midpoint, forKey: "midpoint")
@@ -44,10 +51,12 @@ class CoordinateController1: UIViewController {
             self.convertUserAddressToCoordinates(userAddress: fAddress, completionHandler: { (flon,flat) in
                 
                 DispatchQueue.main.async {
-                    
+
                     self.midpoint = (((flon + lon)/2), ((lat + flat)/2))
                     print(self.midpoint!)
-                    print("is the motherfucking midpoint")
+                    print("is the midpoint")
+                    
+                    
                     
                 }
                 

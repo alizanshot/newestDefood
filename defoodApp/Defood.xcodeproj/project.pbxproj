@@ -15,6 +15,7 @@
 		91ADEAB820FD7786002CB7AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ADEAB720FD7786002CB7AA /* ViewController.swift */; };
 		91ADEABB20FD7786002CB7AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91ADEAB920FD7786002CB7AA /* Main.storyboard */; };
 		91ADEABD20FD7787002CB7AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91ADEABC20FD7787002CB7AA /* Assets.xcassets */; };
+		E0E1D0B5210115DE0092981A /* Restaurantresults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1D0B4210115DE0092981A /* Restaurantresults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		91ADEABA20FD7786002CB7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91ADEABC20FD7787002CB7AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91ADEAC120FD7787002CB7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E1D0B4210115DE0092981A /* Restaurantresults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurantresults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		91ADEAB420FD7786002CB7AA /* Defood */ = {
 			isa = PBXGroup;
 			children = (
+				E0E1D0B3210115C60092981A /* Models */,
 				91ADEAB520FD7786002CB7AA /* AppDelegate.swift */,
 				91ADEABC20FD7787002CB7AA /* Assets.xcassets */,
 				91ADEAB920FD7786002CB7AA /* Main.storyboard */,
@@ -100,6 +103,15 @@
 				01B3526FE89C47A0D4022FAB /* Pods_Defood.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E1D0B3210115C60092981A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0E1D0B4210115DE0092981A /* Restaurantresults.swift */,
+			);
+			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +229,7 @@
 				91ADEAB820FD7786002CB7AA /* ViewController.swift in Sources */,
 				917E44BC21002123006B1D5B /* FoodViewController.swift in Sources */,
 				91ADEAB620FD7786002CB7AA /* AppDelegate.swift in Sources */,
+				E0E1D0B5210115DE0092981A /* Restaurantresults.swift in Sources */,
 				917E44BA210020BA006B1D5B /* CoordinateController1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
